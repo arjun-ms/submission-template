@@ -9,7 +9,7 @@ const db = new Sequelize(configDB["sqlite"]);
 db.authenticate()
     .then(() => {
         console.log('DB Connected🚀')
-        db.sync()
+        db.sync({force: true})
             .then((result) => {
                 console.log("Tables Synced!");
             })
