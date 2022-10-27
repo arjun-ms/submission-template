@@ -1,0 +1,75 @@
+.Home {
+    text-align: center;
+    background-color: #0B0A34;
+}
+
+.Home .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Home .content1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.Home .div1 {
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+.Home .div2 {
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+.Home .div3 {
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+.Home .text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Share Tech', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.Home .text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Share Tech', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.Home .text3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Share Tech', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.Home .content1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Home .content2 {
+    display: flex;
+    justify-content: flex-end;
+}

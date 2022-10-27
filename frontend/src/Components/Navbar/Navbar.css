@@ -7,7 +7,8 @@ nav{
     background-color: #0B0A34;
     display:flex;
     justify-content: flex-end;
-    padding-top: 10px;
+    padding: 10px 0s;
+    height: 60px;
 }
 ul{
     display: flex;
