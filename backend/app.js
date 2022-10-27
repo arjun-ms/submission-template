@@ -18,5 +18,3 @@ app.use('/paintings', require('./src/routes/paintings.js'));
 app.use('/digitalarts', require('./src/routes/digitalarts.js'));
 
 app.listen(process.env.PORT || 3000);
-
-// npm i bcrypt cors crypto dotenv express jsonwebtoken nodemon sequelize sqlite3
