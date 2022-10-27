@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #0B0A34;
+    display:flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.Navbar_image{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.nav_button{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    margin-left: 15px;
+    font-family: 'Share Tech', sans-serif;
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+hr{
+    color:white;
+}

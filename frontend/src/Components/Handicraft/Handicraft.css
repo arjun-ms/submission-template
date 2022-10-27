@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.content{
+    display:grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    background-color: #0B0A34;
+    padding-top: 20px;
+}
+.Handicraft{
+    background-color: #0B0A34;
+}
+.div1{
+    margin:10px 0px 10px 0px;
+    position:relative;
+    text-align: center;
+  }
+  .text1{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Share Tech', sans-serif;
+    color:black;
+    font-size: 14px;
+  }
