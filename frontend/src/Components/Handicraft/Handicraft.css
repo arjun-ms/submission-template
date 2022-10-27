@@ -4,10 +4,9 @@
     box-sizing: border-box;
 }
 .content{
-    display:grid;
-    column-gap: 20px;
-    row-gap: 20px;
-    grid-template-columns: auto auto auto auto;
+    display:flex;
+    margin:10px;
+    flex-wrap: wrap;
     background-color: #0B0A34;
     padding-top: 20px;
 }
@@ -18,12 +17,14 @@
     margin:10px 0px 10px 0px;
     position:relative;
     text-align: center;
+    width: 20%;
+    max-width: 300px; 
   }
   .text1{
-    position: absolute;
+    /* position: absolute;
     top: 85%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     font-family: 'Share Tech', sans-serif;
     color:black;
     font-size: 14px;
