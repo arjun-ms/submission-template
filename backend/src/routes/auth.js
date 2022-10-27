@@ -10,7 +10,7 @@ const jwt = require("jsonwebtoken")
  * Functions
  */
 function createAccessToken(user) {
-    return jwt.sign({ email: user.email }, "thisisanextremelysecrettoken", { expiresIn: '20d' });
+    return jwt.sign({ email: user.email, userId: user.userId }, "thisisanextremelysecrettoken", { expiresIn: '20d' });
 }
 
 function populateUser(user) {
