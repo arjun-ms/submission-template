@@ -1,9 +1,9 @@
 import React from 'react'
-import './Handicraft.css'
+import './Auction.css'
 
-function Handicraft() {
+function Auction() {
   return (
-    <div className='Handicraft'>
+    <div className='Auction'>
        <div className='content'>
         <div className='div1'>
        <img src="/assets/Handicraft_images/Group1.png" className="Navbar_image" alt="logo"></img>
@@ -42,4 +42,4 @@ function Handicraft() {
   )
 }
 
-export default Handicraft
+export default Auction
