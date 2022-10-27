@@ -16,7 +16,7 @@ function createAccessToken(user) {
 function populateUser(user) {
     let populated = {
         userId: crypto.randomBytes(16).toString("hex"),
-        name: user.fullName,
+        name: user.name,
         email: user.email,
         password: user.password,
         phone: user.phone,
@@ -90,6 +90,7 @@ router.post('/signup', (req, res) => {
                         return res.status(200).json({ accessToken, userData });
                     })
                     .catch(err => {
+                        console.log(err);
                         return res.status(500).json({ message: "Unexpected Error on User Creation" });
                     })
             }).catch(err => {
