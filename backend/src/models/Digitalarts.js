@@ -24,10 +24,6 @@ const Digitalarts = db.define('Digitalarts', {
     type: DataTypes.BLOB('long'),
     allowNull: false
   },
-  address: {
-    type: DataTypes.STRING,
-    allowNull: false
-  },
   bought: {
     type: DataTypes.BOOLEAN,
     defaultValue: false,

@@ -2,7 +2,7 @@
 
 
 # {Project Name} - Make a Ton 5.0
-Tell us about your project here
+
 
 ## Team Members
 [1. Arjun M S](https://github.com/arjun-ms)   
