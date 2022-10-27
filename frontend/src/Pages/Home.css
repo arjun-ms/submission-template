@@ -1,9 +1,11 @@
 .Home {
+    height: calc(100vh - 60px);
     text-align: center;
     background-color: #0B0A34;
 }
 
 .Home .content {
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,18 +22,21 @@
     margin: 10px 0;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 .Home .div2 {
     margin: 10px 0;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 .Home .div3 {
     margin: 10px 0;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 .Home .text1 {
