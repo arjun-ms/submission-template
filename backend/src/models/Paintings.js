@@ -37,6 +37,7 @@ const Paintings = db.define('Paintings', {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+  
 });
 
 module.exports = Paintings

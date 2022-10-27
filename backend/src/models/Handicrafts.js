@@ -41,6 +41,7 @@ const Handicrafts = db.define('Handicrafts', {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+  
 });
 
 module.exports = Handicrafts
