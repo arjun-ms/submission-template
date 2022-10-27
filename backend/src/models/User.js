@@ -1,7 +1,8 @@
 const { DataTypes } = require('sequelize');
+const db = require("../database/database");
 
 
-export const User = sequelize.define('User', {
+const User = db.define('User', {
   // Model attributes are defined here
   userId: {
     type: DataTypes.STRING,
@@ -38,3 +39,5 @@ export const User = sequelize.define('User', {
   },
   
 });
+
+module.exports = User;
