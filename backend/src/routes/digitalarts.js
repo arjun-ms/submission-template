@@ -2,12 +2,21 @@ require('dotenv').config()
 const express = require("express");
 const router = express.Router();
 const Digitalarts = require('../models/Digitalarts');
-const bcrypt = require('bcrypt');
 const crypto = require("crypto");
 const jwt = require("jsonwebtoken")
 
 router.get('/', (req, res) => {
     return res.status(200).json({ message: "Digital Arts Route Route" });
+})
+
+router.get('/all', (req, res) => {
+    Digitalarts.findAll()
+        .then((data) => {
+            return res.status(200).json({ data });
+        })
+        .catch((err) => {
+            return res.status(500).json({ message: "Unexpected Error on User Fetch" });
+        })
 })
 
 router.post('/create', (req, res) => {
@@ -41,6 +50,42 @@ router.post('/create', (req, res) => {
                 .catch(err => {
                     console.log(err);
                     return res.status(500).json({ message: "Unexpected Error on Art Creation" });
+                })
+        }
+    })
+
+})
+
+
+router.post('/delete', (req, res) => {
+    const art = req.body;
+
+    if (art.token == undefined) {
+        return res.status(404).json({ message: "Token Not Provided" });
+    }
+
+    if (art.itemId == undefined) {
+        return res.status(404).json({ message: "All Necessary Art Information Not Provided" });
+    }
+
+    jwt.verify(art.token, "thisisanextremelysecrettoken", (err, decoded) => {
+        if (!decoded) return res.status(404).json({ message: "Token Invalid" });
+        else {
+            Digitalarts.findOne({ where: { itemId: art.itemId } })
+                .then(data => {
+                    if (data === null) return res.status(404).json({ message: "Art Do Not Exists" });
+                    let artData = data.dataValues;
+                    Digitalarts.destroy({ where: { itemId: art.itemId } })
+                        .then(data => {
+                            return res.status(200).json({ message: "Successfully Deleted Art" });
+                        })
+                        .catch(err => {
+                            return res.status(500).json({ message: "Unexpected Error on Art Deletion" });
+                        })
+
+                })
+                .catch(err => {
+                    return res.status(500).json({ message: "Unexpected Error on Reading from Database" });
                 })
         }
     })

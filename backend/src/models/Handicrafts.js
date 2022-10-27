@@ -29,10 +29,6 @@ const Handicrafts = db.define('Handicrafts', {
     defaultValue: false,
     allowNull: false
   },
-  stock: {
-    type: DataTypes.INTEGER,
-    allowNull: false
-  },
   artist: {
     type: DataTypes.INTEGER,
     allowNull: false,
