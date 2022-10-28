@@ -1,0 +1,23 @@
+.Digitalarts .content{
+    display:flex;
+    margin:0 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0B0A34;
+    padding-top: 20px;
+}
+.Digitalarts{
+    background-color: #0B0A34;
+}
+.Digitalarts .div1{
+    margin:10px;
+    text-align: center;
+    min-width: 200px;
+  }
+.Digitalarts  .text1{
+    font-family: 'Share Tech', sans-serif;
+    color:black;
+    font-size: 14px;
+    position:relative;
+    top: -40px;
+}

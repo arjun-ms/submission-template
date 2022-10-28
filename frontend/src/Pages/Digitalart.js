@@ -1,8 +1,11 @@
 import React from 'react'
+import Digitalarts from './../Components/Handicraft/Digitalarts'
 
 function Digitalart() {
   return (
-    <div>Digitalart</div>
+    <div>
+      <Digitalarts/>
+    </div>
   )
 }
 

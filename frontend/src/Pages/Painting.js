@@ -1,8 +1,9 @@
 import React from 'react'
+import Paintings from './../Components/Handicraft/Paintings'
 
 function Painting() {
   return (
-    <div>Painting</div>
+    <div><Paintings/></div>
   )
 }
 
