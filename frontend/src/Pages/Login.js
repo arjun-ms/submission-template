@@ -12,7 +12,7 @@ function Login() {
   }
 
   return (
-    <div className='content'>
+    <div className='Login'>
       <div className='content1'>
         <form onSubmit={handleSubmit} className='main_form'>
           <input type="email" placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value) }} required />

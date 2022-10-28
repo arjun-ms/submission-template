@@ -26,7 +26,7 @@ function Signup() {
     }
 
     return (
-        < div className='content'>
+        < div className='Signup'>
             <div className='content1'>
                 <form onSubmit={handleSubmit} className='main_form'>
                     <input type="email" placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value) }} required />
