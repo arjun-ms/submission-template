@@ -1,1 +1,1 @@
-export const api = "dry-plains-47365.herokuapp.com"
+export const api = "https://dry-plains-47365.herokuapp.com"
