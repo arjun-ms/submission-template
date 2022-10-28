@@ -5,6 +5,8 @@ import Handicraft from './Pages/Handicrafts';
 import Painting from './Pages/Painting';
 import Digitalart from './Pages/Digitalart';
 import Auctions from './Pages/Auctions';
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path="/painting" element={<Painting />} />
         <Route path="/digitalart" element={<Digitalart />} />
         <Route path="/auction" element={<Auctions />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </div>
   );

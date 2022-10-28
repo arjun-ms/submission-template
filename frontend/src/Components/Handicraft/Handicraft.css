@@ -1,11 +1,7 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-.content{
+.Handicraft .content{
     display:flex;
-    margin:10px;
+    margin:0 10px;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: #0B0A34;
     padding-top: 20px;
@@ -13,19 +9,15 @@
 .Handicraft{
     background-color: #0B0A34;
 }
-.div1{
-    margin:10px 0px 10px 0px;
-    position:relative;
+.Handicraft .div1{
+    margin:10px;
     text-align: center;
-    width: 20%;
-    max-width: 300px; 
+    min-width: 200px;
   }
-  .text1{
-    /* position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+.Handicraft  .text1{
     font-family: 'Share Tech', sans-serif;
     color:black;
     font-size: 14px;
-  }
+    position:relative;
+    top: -40px;
+}
