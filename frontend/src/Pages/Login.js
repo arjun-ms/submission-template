@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import './Login.css'
 function Login() {
 
     const [email, setEmail] = useState("");
@@ -12,8 +12,8 @@ function Login() {
     }
 
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
+    <div className='content'>
+        <form onSubmit={handleSubmit} className='main_form'>
             <input type="email" placeholder="Email" value={email} onChange={(e)=>{setEmail(e.target.value)}} required/>
             <input type="password" placeholder="Password" value={password} onChange={(e)=>{setPassword(e.target.value)}} required/>
             <input type="submit" value="Submit"/>
