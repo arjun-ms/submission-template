@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import {api} from './../api/api'
-
+import { api } from './../api/api'
+import './Signup.css'
 function Signup() {
 
     const [email, setEmail] = useState("");
@@ -26,15 +26,17 @@ function Signup() {
     }
 
     return (
-        < div >
-            <form onSubmit={handleSubmit}>
-                <input type="email" placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value) }} required />
-                <input type="password" placeholder="Password" value={password} onChange={(e) => { setPassword(e.target.value) }} required />
-                <input type="text" placeholder="Name" value={name} onChange={(e) => { setName(e.target.value) }} required />
-                <input type="text" placeholder="Address" value={address} onChange={(e) => { setAddress(e.target.value) }} required />
-                <input type="text" placeholder="Phone" value={phone} onChange={(e) => { setPhone(e.target.value) }} required />
-                <input type="submit" value="Submit" />
-            </form>
+        < div className='content'>
+            <div className='content1'>
+                <form onSubmit={handleSubmit} className='main_form'>
+                    <input type="email" placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value) }} required />
+                    <input type="password" placeholder="Password" value={password} onChange={(e) => { setPassword(e.target.value) }} required />
+                    <input type="text" placeholder="Name" value={name} onChange={(e) => { setName(e.target.value) }} required />
+                    <input type="text" placeholder="Address" value={address} onChange={(e) => { setAddress(e.target.value) }} required />
+                    <input type="text" placeholder="Phone" value={phone} onChange={(e) => { setPhone(e.target.value) }} required />
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
         </div >
     )
 }
